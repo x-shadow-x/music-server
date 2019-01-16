@@ -1,35 +1,37 @@
 {
-  "name": "music-server",
-  "version": "0.0.1",
-  "description": "反向代理服务器",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/x-shadow-x/music-server.git"
-  },
-  "keywords": [
-    "koa2;reverse",
-    "proxy"
-  ],
-  "author": "junyanliu",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/x-shadow-x/music-server/issues"
-  },
-  "homepage": "https://github.com/x-shadow-x/music-server#readme",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "chalk": "^2.4.2",
-    "koa": "^2.6.2"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.3.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "pre-commit": "^1.2.2"
-  }
+    "name": "music-server",
+    "version": "0.0.1",
+    "description": "反向代理服务器",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/x-shadow-x/music-server.git"
+    },
+    "keywords": [
+        "koa2;reverse",
+        "proxy"
+    ],
+    "author": "junyanliu",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/x-shadow-x/music-server/issues"
+    },
+    "homepage": "https://github.com/x-shadow-x/music-server#readme",
+    "dependencies": {
+        "axios": "^0.18.0",
+        "chalk": "^2.4.2",
+        "koa": "^2.6.2",
+        "koa-bodyparser": "^4.2.1",
+        "koa2-cors": "^2.0.6"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.3.0",
+        "eslint-config-airbnb-base": "^13.1.0",
+        "eslint-plugin-import": "^2.14.0",
+        "pre-commit": "^1.2.2"
+    }
 }
