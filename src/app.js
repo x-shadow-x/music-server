@@ -5,7 +5,6 @@ const cors = require('koa2-cors');
 const Koa = require('koa');
 const app = new Koa();
 const main = require('./api/main');
-
 app.use(bodyParser());
 app.use(cors({
     origin: function (ctx) {
