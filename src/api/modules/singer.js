@@ -1,6 +1,22 @@
 const { getFn } = require('../request');
 
-exports.getSinger = function(queryParams) {
-    console.info(getFn, queryParams);
-    // return getFn(queryParams);
+exports.getSingers = function(queryParams) {
+    return getFn(queryParams).then((res) => {
+        const data = res.data;
+        
+        if(data.code == 0) {
+            return {
+                data: {
+                    ...data.singerList
+                }
+            };
+        } else {
+            return {
+                data: {
+                    code: data.code,
+                    message: '获取歌手数据出错'
+                }
+            };
+        }
+    });
 };

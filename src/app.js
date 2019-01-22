@@ -31,6 +31,7 @@ app.use(async(ctx) => {
     if(ctx.method === 'POST') {
         postData = ctx.request.body;
     }
+    
     if(Object.prototype.toString.call(main[fnName]) == '[object Function]') {
         const response = await main[fnName](params, postData);
         ctx.body = response.data;

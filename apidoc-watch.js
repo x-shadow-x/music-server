@@ -1,5 +1,7 @@
 const gaze = require('gaze');  
-const exec = require('child_process').exec;  
+const exec = require('child_process').exec;
+const env = process.argv[2] || 'dev';
+const DEV = 'dev';
 
 function Watch() {  
     gaze('./src/api/modules/*.js', function(err) {
@@ -46,8 +48,7 @@ function RunServer() {
     });
 }
 
-// RunDevServer();
-RunServer();
+env == DEV ? RunDevServer() : RunServer();
 Geneartion();
 Watch();
 console.info('正在监听......');
