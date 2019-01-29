@@ -20,3 +20,11 @@ exports.getSingers = function(queryParams) {
         }
     });
 };
+
+exports.getSingerDetail = function(queryParams) {
+    return getFn(queryParams);
+};
+
+exports.getVkey = function(queryParams) {
+    return getFn(queryParams);
+};
