@@ -14,7 +14,6 @@ exports.getFn = function(queryParams) {
     delete params.routeName;
     delete params.referer;
     delete params.origin;
-
     return axios.get(url, {
         headers,
         params

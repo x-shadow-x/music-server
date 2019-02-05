@@ -25,6 +25,6 @@ exports.getSingerDetail = function(queryParams) {
     return getFn(queryParams);
 };
 
-exports.getVkey = function(queryParams) {
+exports.getVKey = function(queryParams) {
     return getFn(queryParams);
 };
