@@ -42,6 +42,10 @@ exports.getRecommend = function(queryParams) {
  *          "data": {}
  *      }
  */
-exports.getDiscList = function(queryParams) {
+exports.getDissList = function(queryParams) {
+    return getFn(queryParams);
+};
+
+exports.getDissDetail = function(queryParams) {
     return getFn(queryParams);
 };
